@@ -25,7 +25,7 @@ public class RecipeController {
         return ResponseEntity.ok(saved);
     }
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<String> uploadRecipes(@RequestParam("file") MultipartFile file) {
         try {
             ObjectMapper mapper = new ObjectMapper();
